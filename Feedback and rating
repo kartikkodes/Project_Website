@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int main(){
+    int rating;
+    printf("Please rate\n ");
+    scanf("%d",&rating);
+    switch(rating)
+    {
+        case 1:
+        printf("Sorry for the bad experience");break;
+        case 2:
+        printf("We'll try more");break;
+        case 3:
+        printf("Hope you'll feel good in coming future");break;
+        case 4:
+        printf("Thanks for the rating");break;
+        case 5:
+        printf("Woo hoo!");break;
+        default:
+        printf("Invalid rating");break;
+    }
+    return 0;
+}
