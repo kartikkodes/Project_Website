@@ -1,0 +1,60 @@
+#include<stdio.h>
+#include<string.h>
+#include<conio.h>
+
+/*-------------------------------Admin name part-----------------------------------------------------------------------------------*/
+
+int main()
+{
+    int x,y;
+    char name[10];
+    char pass[8];
+
+    char nameori[]={"kartik"};  //admin name
+    char passori[]={"1511200abc"}; //admin password
+
+    printf("LOGIN ADMIN\n");                                                                       
+    getch();                                   //<-------------ALL this is show and login part
+    printf("Enter your name:\n ");             
+    scanf("%s",name);                             
+
+
+    x=(strcmp(name,nameori)); 
+    if(x==0)
+    {
+        printf("Admin name success\n");
+    }                                                  //<----------Verification Part                 
+    else
+    {
+        printf("Admin name wrong\n Try Again");
+    }
+
+
+    /*------------------------------------------------Password Part-----------------------------------------------------------*/
+    printf("Enter the password\n");
+    scanf("%s",pass);
+
+    y=strcmp(pass,passori);
+
+    if(y==0)
+    {
+        printf("Password Correct\n");
+    }
+    else
+    {
+        printf("Wrong Password");
+    }
+    
+
+    if(x==0 && y==0)
+    {
+        printf("Login Success");
+    }
+    else
+    {
+        printf("Login Failed");
+    }
+    
+    
+    return 0;
+}
